@@ -3,18 +3,39 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "mkdir -p dist && echo 'Build complete!' > dist/index.html",
+    "start": "node dist/server.js",
+    "build": "npm run clean && npm run build-app",
+    "build-app": "webpack --config webpack.config.js --mode production",
+    "clean": "rm -rf dist && mkdir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Description de ton application",
   "dependencies": {
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
     "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
     "express": "^4.19.2",
     "fs": "^0.0.1-security",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "net-browserify": "^0.1.4",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "timers-browserify": "^2.0.12",
+    "url": "^0.11.3",
+    "util": "^0.12.5",
+    "vm-browserify": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
   }
 }
