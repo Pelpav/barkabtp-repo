@@ -204,8 +204,30 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/blog.js"></script>
     <script>
+        document.getElementById('addBtn').onclick = function () {
+                const title = document.getElementById('title').value;
+                const imageFile = document.getElementById('image').files[0];
+                const author = document.getElementById('author').value;
+                const description = document.getElementById('description').value;
 
+                const formData = new FormData();
+                formData.append('title', title);
+                formData.append('image', imageFile);
+                formData.append('author', author);
+                formData.append('description', description);
 
+                fetch('http://localhost:3001/barkabtp-repo/blog', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Article ajouté:', data);
+                        loadBlog(); // Recharger la liste des articles après ajout
+                        resetForm(); // Réinitialiser le formulaire si nécessaire
+                    })
+                    .catch(error => console.error('Error adding article:', error));
+            };
     </script>
 
 </body>
