@@ -1185,7 +1185,7 @@ section {
 }
 
 .portfolio .portfolio-flters li {
-  color: gray !important ;
+  color: var(--color-secondary);
   cursor: pointer;
   display: inline-block;
   padding: 0;
