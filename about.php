@@ -28,7 +28,7 @@
 
                 <div class="row gy-4" data-aos="fade-up">
                     <div class="col-lg-4">
-                        <img src="https://barnimages.com/wp-content/uploads/2019/09/Delesign-information-to-uninterested-person-illustration.png"
+                        <img src="https://img.freepik.com/vecteurs-premium/chantier-construction-construction-maison-entreprise-immobiliere-illustration-vectorielle_333239-407.jpg"
                             class="
                             img-fluid" alt="">
                     </div>

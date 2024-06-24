@@ -1,4 +1,4 @@
-<?php require_once ('layout/head.php'); ?>
+<?php session_start(); require_once ('layout/head.php'); ?>
 
 
 <body class="page-add-item">
@@ -8,9 +8,14 @@
 
     <?php
     // Vérifier si le code est saisi correctement
-    $code = isset($_POST['code']) ? $_POST['code'] : '';
+    if (isset($_POST['code'])) {
+        $code = $_POST['code'];
+        if ($code === '5002') {
+            $_SESSION['authenticated'] = true;
+        }
+    }
 
-    if ($code !== '5002') {
+    if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
         // Afficher le formulaire de saisie du code
         ?>
 

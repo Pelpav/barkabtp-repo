@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-4">
-                    <h2 data-aos="fade-up">EVOLUONS ENSEMBLE !</h2>
+                    <h2 data-aos="fade-up">EVOLUONS !</h2>
                     <blockquote data-aos="fade-up" data-aos-delay="100">
                         <p>Profitez de notre ingeniosité dans le domaine de la construction et obtenez grâce à nous des
                             plans
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="col-xl-5 img-bg" style="background-image: url('https://img.freepik.com/vecteurs-libre/illustration-concept-creativite-plat_52683-64279.jpg'
+                    <div class="col-xl-5 img-bg" style="background-image: url('https://us.123rf.com/450wm/jemastock/jemastock2001/jemastock200111361/137043906-sous-sc%C3%A8ne-de-construction-avec-conception-d-illustration-vectorielle-de-pelle.jpg?ver=6'
                         )">
                     </div>
                     <div class="col-xl-7 slides position-relative">
@@ -193,7 +193,7 @@
                     </div>
                     <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
                         <div class="phone-wrap">
-                            <img src="https://img.freepik.com/vecteurs-premium/homme-est-assis-bureau-ordinateur-portable-devant-lui-cote-fusee-apprenez-lancer-entreprise-demarrage-tendance-simple-minimaliste-illustration-vectorielle-plate_538213-52024.jpg"
+                            <img src="https://img.freepik.com/vecteurs-libre/ingenierie-plate-construction-illustree_23-2148892788.jpg"
                                 alt="Image" class="img-fluid">
                         </div>
                     </div>

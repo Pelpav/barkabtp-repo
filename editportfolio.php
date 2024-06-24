@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+// Rediriger vers blog.php si l'utilisateur n'est pas authentifié
+if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
+    header('Location: portfolio.php');
+    exit;
+}
 // Activer l'affichage des erreurs PHP
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
